@@ -79,5 +79,14 @@ double Vect::getMin() const
 
 Vect Vect::concatenate(const Vect &rhs)
 {
-    
+    Vect temp(size + rhs.size);
+    for (int i = 0; i < size; i++)
+    {
+        temp.array[i] = array[i];
+    }
+    for (int j = 0; j < rhs.size; j++)
+    {
+        temp.array[j + size] = rhs.array[j];
+    }
+    return temp;
 }

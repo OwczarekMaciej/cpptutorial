@@ -7,11 +7,12 @@ private:
     int size;
     double *array;
     void alloc_check();
-    
+
 public:
     Vect(int size = 1);
     Vect(const Vect &source);
     ~Vect();
+    
     int getSize() const;
     double getAverage() const;
     double getMin() const;
@@ -19,8 +20,6 @@ public:
     void setElement(int index, double value);
 
     Vect concatenate(const Vect &rhs);
-       
 };
 
-
-#endif 
+#endif

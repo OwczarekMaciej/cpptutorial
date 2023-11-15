@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Vect.h"
 
-
 int main()
 {
     Vect v1(3);
@@ -28,10 +27,11 @@ int main()
     std::cout << v2.getMin() << std::endl;
     std::cout << v3.getMin() << std::endl;
 
-    Vect v4 = v1;
-    v4.print();
+    // Vect v4 = v1;
+    // v4.print();
 
-    
+    Vect v5 = v1.concatenate(v2);
+    v5.print();
 
 
     return 0;
