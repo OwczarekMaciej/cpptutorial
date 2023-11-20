@@ -33,6 +33,5 @@ int main()
     Vect v5 = v1.concatenate(v2);
     v5.print();
 
-
     return 0;
 }
